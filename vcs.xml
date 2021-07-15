@@ -17,9 +17,13 @@
           <option name="url" value="http://git.nowcoder.com" />
           <option name="userName" value="francis_thpeng@qq.com" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitee.com:stylefeng/roses.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="D:\Code\IDEA_WorkSpace\nowcoder" />
+    <option name="cloneParentDir" value="D:\Code\OpenSource" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ORDER">
