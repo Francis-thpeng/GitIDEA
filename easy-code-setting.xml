@@ -166,11 +166,19 @@
                     <option name="javaType" value="java.lang.Boolean" />
                   </TypeMapper>
                   <TypeMapper>
-                    <option name="columnType" value="varchar(\(\d+\))?" />
+                    <option name="columnType" value="varchar2(\(\d+\))?" />
                     <option name="javaType" value="java.lang.String" />
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="longblob" />
+                    <option name="javaType" value="java.lang.Object" />
+                  </TypeMapper>
+                  <TypeMapper>
+                    <option name="columnType" value="date" />
+                    <option name="javaType" value="java.util.Date" />
+                  </TypeMapper>
+                  <TypeMapper>
+                    <option name="columnType" value="timestamp(\(\d+\))?" />
                     <option name="javaType" value="java.lang.Object" />
                   </TypeMapper>
                 </list>
