@@ -1,5 +1,20 @@
 <application>
+  <component name="AppStorage">
+    <option name="newTranslationDialogWidth" value="596" />
+    <option name="newTranslationDialogX" value="879" />
+    <option name="newTranslationDialogY" value="492" />
+    <histories>
+      <item value="abandon" />
+      <item value="huangyajun  h48y28" />
+    </histories>
+    <option name="languageScores">
+      <map>
+        <entry key="CHINESE" value="2" />
+        <entry key="ENGLISH" value="1" />
+      </map>
+    </option>
+  </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1627969373834" />
+    <option name="lastTrimTime" value="1629336679179" />
   </component>
 </application>
