@@ -24,7 +24,7 @@
     <option name="IS_WHEEL_FONTCHANGE_ENABLED" value="true" />
   </component>
   <component name="InlayHintsSettings">
-    <option name="lastViewedProviderKeyId" value="microservices.url.path.inlay.hints" />
+    <option name="lastViewedProviderKeyId" value="parameter.hints.old" />
   </component>
   <component name="JSCodeFoldingSettings">
     <option name="collapseArrayLiterals" value="true" />
