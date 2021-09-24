@@ -1,10 +1,10 @@
 <templateSet group="MyTemplate">
-  <template name="*" value="*&#10; * &#10; * @author $user$&#10; * @date $date$ $time$$param$ $return$&#10; */" shortcut="ENTER" toReformat="false" toShortenFQNames="true">
-    <variable name="user" expression="user()" defaultValue="thp" alwaysStopAt="true" />
-    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
-    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
-    <variable name="param" expression="groovyScript(&quot;def result = '';def params = \&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {if(params[i] != '')result+='* @param ' + params[i] + ((i &lt; params.size() - 1) ? '\\r\\n ' : '')}; return result == '' ? null : '\\r\\n ' + result&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
-    <variable name="return" expression="groovyScript(&quot;return \&quot;${_1}\&quot; == 'void' ? null : '\\r\\n * @return ' + \&quot;${_1}\&quot;&quot;, methodReturnType())" defaultValue="" alwaysStopAt="true" />
+  <template name="*" value="*&#10; * &#10; * @author $user$&#10; * @date $date$ $time$$param$&#10; * @return $returns$&#10; */" shortcut="ENTER" description="方法注释" toReformat="false" toShortenFQNames="true">
+    <variable name="user" expression="user()" defaultValue="thp" alwaysStopAt="false" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <variable name="param" expression="" defaultValue="groovyScript(&quot;def result = '';def params = \&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {if(params[i] != '')result+='* @param ' + params[i] + ((i &lt; params.size() - 1) ? '\\r\\n ' : '')}; return result == '' ? null : '\\r\\n ' + result&quot;, methodParameters())" alwaysStopAt="true" />
+    <variable name="returns" expression="" defaultValue="groovyScript(&quot;def result='';  def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split('&lt;').toList(); for(i = 0; i &lt; params.size(); i++) {if(i!=0){result+='&lt;';};  def p1=params[i].split(',').toList();  for(i2 = 0; i2 &lt; p1.size(); i2++)  { def p2=p1[i2].split('\\\\.').toList();  result+=p2[p2.size()-1]; if(i2!=p1.size()-1){result+=','}  } ; };  return result&quot;, methodReturnType())  " alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
